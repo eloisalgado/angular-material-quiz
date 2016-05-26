@@ -1,0 +1,46 @@
+.page-2 {
+
+  .image-block {
+    width: 100%;
+
+    md-radio-group {
+      width: 100%;
+
+      md-radio-button {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .option-btn {
+
+      .md-container {
+        top: 72%;
+        left: 50%;
+        margin-left: -10px;
+      }
+
+      .md-label {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+
+        span {
+          display: block;
+          margin-top: 30px;
+        }
+      }
+
+    }
+
+  }
+
+}

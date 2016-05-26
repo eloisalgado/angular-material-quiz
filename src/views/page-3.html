@@ -1,0 +1,12 @@
+<div class="page-3">
+  <p>Review</p>
+
+  <div ng-include="'views/partials/_page-1-form-inputs.html'"></div>
+  
+  <md-radio-group class="md-primary option-btn" layout-gt-sm="row">
+    <md-radio-button flex ng-value="foodType.id" aria-label="{{ foodType.label }}" ng-disabled="true">
+      <img ng-src="{{foodType.img}}" alt="" class="img-circle">
+      {{ foodType.label }}
+    </md-radio-button>
+  </md-radio-group>
+</div>

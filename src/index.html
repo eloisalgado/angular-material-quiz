@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Material Quiz</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="TestApp">
+
+    <div class="container" layout="column">
+      <md-toolbar class="header" layout-align="center">
+        <div layout="row" class="timeline">
+          <div flex="33">
+            <div class="circle" ng-class="{'active': pageId === 1}">1</div>
+          </div>
+          <div flex="33">
+            <div class="circle" ng-class="{'active': pageId === 2}">2</div>
+          </div>
+          <div flex="33">
+            <div class="circle" ng-class="{'active': pageId >= 3}">3</div>
+          </div>
+        </div>
+      </md-toolbar>
+      <md-content class="body" flex layout-padding>
+        <div ng-view=""></div>
+      </md-content>
+      <md-content class="action" flex layout-padding ng-controller="PageCtrl">
+        <div class="left" ng-if="pageId != 4">
+          <md-button class="md-raised md-primary" ng-click="movePage(-1)" ng-disabled="pageId == 1" aria-label="Back">Back</md-button>
+        </div>
+        <div class="right" ng-if="pageId != 4">
+          <md-button class="md-raised md-primary" ng-click="movePage(1, $event)" aria-label="Next">
+            <span ng-if="pageId != 3">Next</span>
+            <span ng-if="pageId == 3">Save</span>
+          </md-button>
+        </div>
+        <div class="right" ng-if="pageId == 4">
+          <md-button class="md-raised md-primary" aria-label="Finish">Finish</md-button>
+        </div>
+      </md-content>
+    </div>
+
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

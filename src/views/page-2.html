@@ -1,0 +1,18 @@
+<div class="page-2">
+  <p>We take too serious to choose our restaurant, everyday. What kind of food do you like?</p>
+
+  <form name="pageForm2" action="">
+
+    <div layout-gt-sm="row">
+      <div class="image-block">
+        <md-radio-group class="md-primary option-btn" ng-model="formData2.foodType" layout-gt-sm="row" ng-required="true">
+          <md-radio-button flex ng-repeat="option in options" ng-value="option.value" aria-label="{{ option.label }}" ng-click="selectOption(option)">
+            <img ng-src="{{option.img}}" alt="" class="img-circle">
+            {{ option.label }}
+          </md-radio-button>
+        </md-radio-group>
+      </div>
+    </div>
+
+  </form>
+</div>

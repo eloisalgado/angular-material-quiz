@@ -1,0 +1,20 @@
+{
+  "name": "ciandt-test",
+  "description": "Angular Test for CI&T",
+  "main": "index.js",
+  "authors": [
+    "Eloízio Cesar D. Salgado"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "gulp",
+    "angular-material"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "angular-material": "^1.0.9",
+    "angular-route": "^1.5.5",
+    "jquery": "~2.1.4"
+  }
+}

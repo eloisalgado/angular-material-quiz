@@ -1,0 +1,24 @@
+{
+  "options": [
+    {
+      "value": "1",
+      "label": "I am an insect",
+      "img": "images/insect.png"
+    },
+    {
+      "value": "2",
+      "label": "I love pasta",
+      "img": "images/pasta.png"
+    },
+    {
+      "value": "3",
+      "label": "Gimme meat",
+      "img": "images/meat.png"
+    },
+    {
+      "value": "4",
+      "label": "Is it food? I am in",
+      "img": "images/food.png"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<div layout-gt-sm="row">
+  <md-input-container class="md-block" flex-gt-sm>
+    <label>Your favorite star wars movie</label>
+    <input minlength="5" name="movie" ng-model="formData.movie" required ng-disabled="disableInputs">
+    <div ng-messages="pageForm.movie.$error" ng-show="pageForm.movie.$dirty && !pageForm.movie.$valid">
+      <div ng-message="required">This is required.</div>
+      <div ng-message="minlength">You need to inform at least 5 characters.</div>
+    </div>
+  </md-input-container>
+  <md-input-container class="md-block" flex-gt-sm>
+    <label>Tv Series that you are currently watching</label>
+    <input name="series" ng-model="formData.series" required ng-disabled="disableInputs">
+    <div ng-messages="pageForm.series.$error" ng-show="pageForm.series.$dirty && !pageForm.series.$valid">
+      <div ng-message="required">This is required.</div>
+      <div ng-message="minlength">You need to inform at least 5 characters.</div>
+    </div>
+  </md-input-container>
+</div>
+
+<div layout-gt-sm="row">
+  <md-input-container class="md-block" flex-gt-sm>
+    <label>Which one do you use: Bolacha or biscoito?</label>
+    <input minlength="5" name="cookie" ng-model="formData.cookie" required ng-disabled="disableInputs" ng-pattern="/bolacha|biscoito/i">
+    <div ng-messages="pageForm.cookie.$error" ng-show="pageForm.cookie.$dirty && !pageForm.cookie.$valid">
+      <div ng-message="required">This is required.</div>
+      <div ng-message="md-pattern">You need to choose Bolacha or biscoito.</div>
+    </div>
+  </md-input-container>
+  <md-input-container class="md-block" flex-gt-sm>
+    <label>What is the best quote ever</label>
+    <input minlength="5" name="quote" ng-model="formData.quote" required ng-disabled="disableInputs">
+    <div ng-messages="pageForm.quote.$error" ng-show="pageForm.quote.$dirty && !pageForm.quote.$valid">
+      <div ng-message="required">This is required.</div>
+      <div ng-message="minlength">You need to inform at least 5 characters.</div>
+    </div>
+  </md-input-container>
+</div>
