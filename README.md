@@ -30,7 +30,7 @@ Run gulp server. Make sure port **3000** is available:
 ```sh
 gulp serve
 ```
-Access the app in your browser:
+Access the app in your browser if it didn't start your browser automatically:
 ```sh
 http://localhost:3000/
 ```
